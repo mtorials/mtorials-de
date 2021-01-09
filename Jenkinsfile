@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Deploy') {
       steps {
-        sh 'cp src/ /var/www/mt32'
+        sh 'cp -r src/ /var/www/mt32'
       }
     }
 
